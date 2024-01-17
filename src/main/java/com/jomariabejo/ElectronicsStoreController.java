@@ -1,5 +1,6 @@
 package com.jomariabejo;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -50,23 +51,7 @@ public class ElectronicsStoreController  {
     private TextField txtField_phoneTotalSales;
 
 
-    @FXML
-    void inputNumberOfHoursChanged(InputMethodEvent event) {
-
-    }
-
-    @FXML
-    void phonePricePerHourChanged(InputMethodEvent event) {
-
-    }
-
-    @FXML
-    void phoneQuantitySoldChanged(InputMethodEvent event) {
-
-    }
-
-    @FXML
-    void phoneSoldPriceChanged(InputMethodEvent event) {
-
+    public void computeTotalSale(ActionEvent event) {
+        System.out.println("Clicked");
     }
 }
