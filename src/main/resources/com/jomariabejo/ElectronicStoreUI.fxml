@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="900.0" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jomariabejo.ElectronicsStoreController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+
+  <Label fx:id="welcomeText" />
+   <Label text="Phone Sold" textFill="RED">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+   <HBox alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="51.0" prefWidth="860.0">
+      <children>
+         <Label fx:id="lbl_phone_sold_price" text="Price">
+            <HBox.margin>
+               <Insets left="150.0" />
+            </HBox.margin>
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+         <TextField fx:id="txtField_phone_sold_price" onInputMethodTextChanged="#phoneSoldPriceChanged" promptText="₱500">
+            <HBox.margin>
+               <Insets left="150.0" />
+            </HBox.margin>
+            <font>
+               <Font size="24.0" />
+            </font>
+         </TextField>
+      </children>
+   </HBox>
+   <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="240.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="51.0" prefWidth="860.0">
+      <children>
+         <Label fx:id="lbl_qty_sold" text="Quantity Sold">
+            <HBox.margin>
+               <Insets left="150.0" />
+            </HBox.margin>
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+         <TextField fx:id="txtField_quantitySold" onInputMethodTextChanged="#phoneQuantitySoldChanged" promptText="10">
+            <HBox.margin>
+               <Insets left="55.0" />
+            </HBox.margin>
+            <font>
+               <Font size="24.0" />
+            </font>
+         </TextField>
+      </children>
+   </HBox>
+   <Label text="Repair Services" textFill="#ffae00">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+   <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="205.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="51.0" prefWidth="860.0">
+      <children>
+         <Label fx:id="lbl_price_per_hour" text="Price per Hour">
+            <HBox.margin>
+               <Insets left="150.0" />
+            </HBox.margin>
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+         <TextField fx:id="txtField_repair_service_pricePerHour" onInputMethodTextChanged="#phonePricePerHourChanged" promptText="₱50.0">
+            <HBox.margin>
+               <Insets left="50.0" />
+            </HBox.margin>
+            <font>
+               <Font size="24.0" />
+            </font>
+         </TextField>
+      </children>
+   </HBox>
+   <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="276.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="51.0" prefWidth="860.0">
+      <children>
+         <Label fx:id="lbl_number_of_hours" text="Number of Hours">
+            <HBox.margin>
+               <Insets left="150.0" />
+            </HBox.margin>
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+         <TextField fx:id="txtField_repair_service_numberOfHours" onInputMethodTextChanged="#inputNumberOfHoursChanged" promptText="5">
+            <HBox.margin>
+               <Insets left="15.0" />
+            </HBox.margin>
+            <font>
+               <Font size="24.0" />
+            </font>
+         </TextField>
+      </children>
+   </HBox>
+   <Label text="Total Sales" textFill="#298621">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+      <padding>
+         <Insets top="25.0" />
+      </padding>
+   </Label>
+   <HBox alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="51.0" prefWidth="860.0" />
+   <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="390.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="51.0" prefWidth="860.0">
+      <children>
+         <Label text="Phones" textFill="RED">
+            <HBox.margin>
+               <Insets left="100.0" />
+            </HBox.margin>
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+         <TextField fx:id="txtField_phoneTotalSales" promptText="₱5000.0">
+            <HBox.margin>
+               <Insets left="120.0" />
+            </HBox.margin>
+            <font>
+               <Font size="24.0" />
+            </font>
+         </TextField>
+      </children>
+      <VBox.margin>
+         <Insets left="50.0" />
+      </VBox.margin>
+   </HBox>
+   <HBox alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="51.0" prefWidth="860.0">
+      <children>
+         <Label text="Repair Service" textFill="#ffae00">
+            <HBox.margin>
+               <Insets left="100.0" />
+            </HBox.margin>
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+         <TextField fx:id="txtField_repairServiceTotalSales" promptText="₱250.0">
+            <HBox.margin>
+               <Insets left="50.0" />
+            </HBox.margin>
+            <font>
+               <Font size="24.0" />
+            </font>
+         </TextField>
+      </children>
+      <VBox.margin>
+         <Insets left="50.0" />
+      </VBox.margin>
+   </HBox>
+</VBox>
