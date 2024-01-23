@@ -10,7 +10,7 @@ public class StringUtil {
      *
      * @return The Philippine Peso currency symbol.
      */
-    public String getPhilippinePesoSymbol() {
+    public static String getPhilippinePesoSymbol() {
         return "₱";
     }
 }

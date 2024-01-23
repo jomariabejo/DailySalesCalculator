@@ -29,7 +29,7 @@
                <Font size="24.0" />
             </font>
          </Label>
-         <TextField fx:id="txtField_phone_sold_price" promptText="₱500">
+         <TextField fx:id="txtField_phone_sold_price" promptText="₱500" text="0">
             <HBox.margin>
                <Insets left="150.0" />
             </HBox.margin>
@@ -49,7 +49,7 @@
                <Font size="24.0" />
             </font>
          </Label>
-         <TextField fx:id="txtField_quantitySold" promptText="10">
+         <TextField fx:id="txtField_quantitySold" promptText="10" text="0">
             <HBox.margin>
                <Insets left="55.0" />
             </HBox.margin>
@@ -74,7 +74,7 @@
                <Font size="24.0" />
             </font>
          </Label>
-         <TextField fx:id="txtField_repair_service_pricePerHour" promptText="₱50.0">
+         <TextField fx:id="txtField_repair_service_pricePerHour" promptText="₱50.0" text="50">
             <HBox.margin>
                <Insets left="50.0" />
             </HBox.margin>
@@ -94,7 +94,7 @@
                <Font size="24.0" />
             </font>
          </Label>
-         <TextField fx:id="txtField_repair_service_numberOfHours" promptText="5">
+         <TextField fx:id="txtField_repair_service_numberOfHours" promptText="5" text="0">
             <HBox.margin>
                <Insets left="15.0" />
             </HBox.margin>
